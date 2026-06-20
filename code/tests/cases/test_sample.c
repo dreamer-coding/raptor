@@ -59,8 +59,8 @@ FOSSIL_TEST(c_test_app_version) {
 // * * * * * * * * * * * * * * * * * * * * * * * *
 
 FOSSIL_TEST_GROUP(c_sample_tests) {
-    FOSSIL_SUITE_ADD(c_sample_suite, c_test_app_name);
-    FOSSIL_SUITE_ADD(c_sample_suite, c_test_app_version);
+    FOSSIL_ADD_TEST(c_sample_suite, c_test_app_name);
+    FOSSIL_ADD_TEST(c_sample_suite, c_test_app_version);
 
-    FOSSIL_TEST_REGISTER(c_sample_suite);
+    FOSSIL_ADD_SUITE(c_sample_suite);
 }
